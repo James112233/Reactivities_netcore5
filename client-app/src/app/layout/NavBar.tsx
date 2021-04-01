@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { Button, Container, Menu } from "semantic-ui-react";
 
 const NavBar = () => {
-
   return (
     <Menu inverted fixed="top">
       <Container>
@@ -16,6 +15,7 @@ const NavBar = () => {
           Reactivites
         </Menu.Item>
         <Menu.Item as={NavLink} to="/activities" name="Activities" />
+        <Menu.Item as={NavLink} to="/errors" name="Errors" />
         <Menu.Item>
           <Button
             as={NavLink}
