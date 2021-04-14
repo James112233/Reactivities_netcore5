@@ -15,7 +15,7 @@ export const ActivityListItem = ({ activity }: Props) => {
           <Item>
             <Item.Image size="tiny" circular src="/assets/user.png" />
             <Item.Content>
-              <Item.Header as={Link} to={`/acitvities/${activity.id}`}>
+              <Item.Header as={Link} to={`/activities/${activity.id}`}>
                 {activity.title}
               </Item.Header>
               <Item.Description>Host by Bob</Item.Description>
