@@ -1,5 +1,4 @@
 import { makeAutoObservable, reaction } from "mobx";
-import { toast } from "react-toastify";
 import { ServerError } from "../models/serverError";
 
 export default class CommonStore {
