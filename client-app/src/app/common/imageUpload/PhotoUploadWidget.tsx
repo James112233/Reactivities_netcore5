@@ -51,6 +51,7 @@ const PhotoUploadWidget = ({ loading, uploadPhoto }: Props) => {
             />
             <Button.Group widths={2}>
               <Button
+                disabled={loading}
                 loading={loading}
                 onClick={onCrop}
                 positive

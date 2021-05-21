@@ -75,7 +75,7 @@ const ProfilePhotos = ({ profile }: Props) => {
                         color="green"
                         content="Main"
                         name={"main" + photo.id}
-                        disabled={photo.isMain}
+                        disabled={photo.isMain || loading}
                         loading={target === "main" + photo.id && loading}
                         onClick={(e) => handleSetMainPhoto(photo, e)}
                       />

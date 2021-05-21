@@ -10,6 +10,11 @@ interface Props {
 }
 
 const ActivityListItemAttendee = ({ attendees }: Props) => {
+  const styles = {
+    borderColor: "orange",
+    borderWidth: 3,
+  };
+
   return (
     <List horizontal>
       {attendees.map((attendee) => (
@@ -26,13 +31,15 @@ const ActivityListItemAttendee = ({ attendees }: Props) => {
                 size="mini"
                 circular
                 src={attendee.image || "/assets/user.png"}
+                bordered
+                style={attendee.following ? styles : null}
               />
             </List.Item>
           }
-          >
-            <Popup.Content>
-              <ProfileCard profile={attendee} />
-            </Popup.Content>
+        >
+          <Popup.Content>
+            <ProfileCard profile={attendee} />
+          </Popup.Content>
         </Popup>
       ))}
     </List>
